@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ul3</title>
+    <script src="tunniteema.js" defer></script>
+</head>
+<body>
+    <h1>Arvutamine</h1>
+    <section class="w-23 row">
+        <h2>Sõidu aeg ja kaugus</h2>
+        <form class="input-form" onsubmit="return timeCalculator();" method="POST">
+            <label for="distance" class="col-sm-2 col-form-label"
+            >Kaugus (km):</label>
+             <input type="number" id="distance" name="distance" required 
+            >
+            <br>
+            <label for="speed">Kiirus (km/h):</label>
+            <input type="number" id="speed" name="speed" required>
+            <br>
+            <button type="submit">Arvuta</button>
+    </form>
+    <div id="TravelTimeResult">
+    </div>
+    </section>
+
+    <section class="w-23 row">
+        <h2>Postitustekuvamine</h2>
+        <form class="input-form" onsubmit="return showPosts();" method="POST">
+            <label for="post" class="col-sm-2 col-form-label"
+            >Postitus:</label>
+             <input type="number" id="post" name="post" required >
+            <br>
+            <label for="maxpost">lehekülg:</label>
+            <input type="number" id="maxpost" name="maxpost" required>
+            <br>
+            <button type="submit">Arvuta</button>
+    </form>
+    <div id="PostResult">
+    </div>
+    </section>
+
+    <section class="w-23 row">
+        <h2>Serveri töö kulu</h2>
+        <form class="input-form" onsubmit="return Watt();" method="POST">
+            <label for="powerInWatts" class="col-sm-2 col-form-label"
+            >Serveri võimsus(W):</label>
+             <input type="number" id="powerInWatts" name="powerInWatts" required >
+            <br>
+            <label for="electricityCostPerKWh">Elektri hind(sent/KWH):</label>
+            <input type="number" id="electricityCostPerKWh" name="electricityCostPerKWh" required>
+            <br>
+            <button type="submit">Arvuta</button>
+    </form>
+    <div id="WattResult">
+    </div>
+    </section>
+    
+</body>
+</html>
