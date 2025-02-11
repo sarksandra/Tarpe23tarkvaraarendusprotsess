@@ -18,25 +18,28 @@
         table, th, td {
             border: 2px solid rgb(255, 255, 255);
             border-collapse: collapse;
-            font-family: 'Courier New';
-            box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.3);
+            font-family:'Courier New';
+            box-shadow: 0px 8px 100px rgba(255, 255, 255, 0.3); 
             transition: transform 0.3s ease-in-out;
-        }
+            
+            
 
+            
+        }
         .container {
             transition: transform 0.3s ease-in-out;
         }
         .container:hover {
             transform: scale(1.03);
         }
-
-        .table-background {
+        .table-background{
             background-image: url("Pealeht/suda.jpg");
             transition: transform 0.3s ease;
         }
-        .table-background{
-            background-image: url("Pealeht/suda.jpg");
+        table-background:hover {
+            transform: scale(1.05);
         }
+        
         p{
             font-size: 25px;
         }
@@ -50,7 +53,8 @@
 </head>
 
 <body>
-    <table>
+    <div class="container">
+        <table>
         <tr>
             <td class="table-background"><img src="Pealeht/cat.jpg" alt="S pilt" width="210" height="300"></td>
             <td style="background-color: rgb(253, 204, 239);">
@@ -95,5 +99,8 @@
             </td>
         </tr>
     </table>
+
+    </div>
+    
 </body>
 </html>
